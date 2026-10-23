@@ -1,3 +1,3 @@
-# 批处理必须是 CRLF（否则 cmd 可能串行解析）
-*.bat text eol=crlf
-*.cmd text eol=crlf
+# 批处理以 GBK 编码 + CRLF 原样保存（cmd 原生读取），不做任何换行规范化
+*.bat -text
+*.cmd -text
