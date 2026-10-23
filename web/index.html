@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ai-chat-core · 聊天</title>
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">🐟 ai-chat-core <small id="ver"></small></div>
+    <div class="actions">
+      <button id="newConv" class="primary" style="flex:1">＋ 新会话</button>
+      <button id="refreshConvs" title="刷新会话列表">↻</button>
+    </div>
+    <div class="conv-list" id="convList"></div>
+    <div class="foot">
+      <a href="/admin.html" style="flex:1"><button style="width:100%">⚙ 配置与日志</button></a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="title" id="convTitle">…</div>
+      <span class="channel-tag" id="convChannel" style="display:none"></span>
+      <div class="spacer"></div>
+      <div class="mood-chip" id="moodChip" hidden title="它此刻的心情（详情在配置页）">🙂</div>
+      <span id="wsDot" title="连接状态" style="color:#e6685a">●</span>
+    </div>
+    <div class="messages" id="messages"></div>
+    <div class="composer">
+      <div class="attachments" id="attachments"></div>
+      <div class="row">
+        <textarea id="input" rows="1" placeholder="说点什么…（Enter 发送，Shift+Enter 换行）"></textarea>
+        <button id="attachBtn" title="加图片">🖼</button>
+        <input type="file" id="fileInput" accept="image/*" multiple hidden>
+        <button id="sendBtn" class="send primary" disabled>发送</button>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/chat.js"></script>
+</body>
+</html>

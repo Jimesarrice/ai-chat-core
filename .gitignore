@@ -1,0 +1,31 @@
+# ===== 运行数据与本地状态 =====
+data/
+logs/
+config.json
+*.pid
+*.log
+
+# ===== 本地模型与二进制引擎（发布包另行分发，不进源码仓库）=====
+Models/*.gguf
+Models/**/*.gguf
+*.gguf
+*.gguf_
+engines/
+
+# ===== 发布产物 / 参考仓库 / 冒烟目录 =====
+dist/
+references/
+_smoke*
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+Thumbs.db

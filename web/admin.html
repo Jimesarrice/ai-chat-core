@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ai-chat-core · 配置与日志</title>
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="admin-wrap">
+  <div class="admin-head">
+    <a href="/"><button>← 回聊天</button></a>
+    <h2 style="margin:0">⚙ 配置与日志</h2>
+    <span class="hint" id="ver"></span>
+    <div style="flex:1"></div>
+    <span class="hint" id="saveState"></span>
+  </div>
+
+  <div class="tabs" id="tabs">
+    <button data-tab="persona" class="active">人设卡</button>
+    <button data-tab="llm">模型接入</button>
+    <button data-tab="memory">记忆</button>
+    <button data-tab="mood">心情</button>
+    <button data-tab="speakup">主动搭话</button>
+    <button data-tab="qq">QQ 桥接</button>
+    <button data-tab="tts">语音合成</button>
+    <button data-tab="search">联网搜集</button>
+    <button data-tab="logs">日志</button>
+    <button data-tab="system">系统</button>
+  </div>
+
+  <div class="panel active" id="panel-persona"><div id="cfg-persona"></div></div>
+  <div class="panel" id="panel-llm"><div id="llmBody"></div></div>
+  <div class="panel" id="panel-memory"><div id="memBody"></div></div>
+  <div class="panel" id="panel-mood"><div id="moodBody"></div></div>
+  <div class="panel" id="panel-speakup"><div id="cfg-speakup"></div><div id="speakupExtra"></div></div>
+  <div class="panel" id="panel-qq"><div id="cfg-qq"></div><div id="qqExtra"></div></div>
+  <div class="panel" id="panel-tts"><div id="cfg-tts"></div><div id="ttsExtra"></div></div>
+  <div class="panel" id="panel-search"><div id="cfg-search"></div><div id="searchExtra"></div></div>
+  <div class="panel" id="panel-logs"><div id="logsBody"></div></div>
+  <div class="panel" id="panel-system"><div id="cfg-system"></div><div id="sysExtra"></div></div>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>
