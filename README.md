@@ -220,3 +220,4 @@ QQ 指向 `http://127.0.0.1:3000` 即可全链路演练。
 [qwentts.cpp](https://github.com/ServeurpersoCom/qwentts.cpp)（Qwen3-TTS 的 C++/GGML 移植）与
 [Serveurperso/Qwen3-TTS-GGUF](https://huggingface.co/Serveurperso/Qwen3-TTS-GGUF) 模型。
 涉及各平台（B站/QQ）使用时请遵守平台协议，公开发布 AI 生成内容请按平台要求标注。
+本项目由蓝色大肥鱼DeepSeek深度参与，感谢梁总发放的鲸圆券！
